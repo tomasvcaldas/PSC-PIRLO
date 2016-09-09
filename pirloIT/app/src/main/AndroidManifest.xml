@@ -16,7 +16,10 @@
             </intent-filter>
         </activity>
         <activity android:name=".inscreverEvento" />
-        <activity android:name=".criarEvento"></activity>
+        <activity android:name=".criarEvento" />
+        <activity android:name=".tennis" />
+        <activity android:name=".volleyball" />
+        <activity android:name=".futebol"></activity>
     </application>
 
 </manifest>

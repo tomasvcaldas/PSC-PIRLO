@@ -5,21 +5,39 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 public class inscreverEvento extends AppCompatActivity {
-
+    TextView output;
+    Button increase;
+    Button decrease;
+    Button back;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_inscrever_evento);
-
-        Button backInscrever = (Button) findViewById(R.id.backInscrever);
-        backInscrever.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent backInscreverIntent = new Intent(inscreverEvento.this,MainActivity.class);
-                startActivity(backInscreverIntent);
-            }
-        });
+        increase = (Button) findViewById(R.id.ins);
+        decrease = (Button) findViewById(R.id.des);
+        back = (Button) findViewById(R.id.exit);
+        output = (TextView) findViewById(R.id.output);
     }
-}
+
+    public void increase (View v) {
+        int currentNumber  = Integer.parseInt(output.getText().toString());
+        if(currentNumber == 10) {}
+            else output.setText(currentNumber + 1 + "");
+        }
+    public void decrease (View v) {
+        int currentNumber  = Integer.parseInt(output.getText().toString());
+        if(currentNumber == 0) {}
+        else output.setText(currentNumber - 1 + "");
+    }
+
+    public void goBack(View v){
+        Intent backCriarIntent = new Intent(inscreverEvento.this,MainActivity.class);
+        startActivity(backCriarIntent);
+    }
+
+    }
+

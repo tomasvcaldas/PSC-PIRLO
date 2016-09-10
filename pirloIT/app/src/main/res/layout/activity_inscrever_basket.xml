@@ -112,5 +112,13 @@
 
     </LinearLayout>
 
+    <ImageView
+        android:layout_gravity="center"
+        android:paddingTop="5dp"
+        android:layout_width="366dp"
+        android:layout_height="256dp"
+        android:id="@+id/imageView10"
+        android:src="@drawable/dragao" />
+
 </LinearLayout>
 

@@ -71,5 +71,15 @@ public class criarEvento extends AppCompatActivity {
         });
 
 
+        Button menu = (Button) findViewById(R.id.button5);
+        menu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                MenuCampos campo = new MenuCampos();
+                campo.show(getFragmentManager(), "seleciona_campo");
+            }
+        });
+
     }
+
 }

@@ -10,6 +10,7 @@
     tools:context="com.example.utilizador.pirloit.criarEvento"
     android:background="#a70c741c">
 
+
     <Button
         style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
@@ -72,16 +73,7 @@
         android:layout_marginTop="60dp"
         android:textSize="25dp" />
 
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/editText"
-        android:layout_alignBottom="@+id/textView2"
-        android:layout_toRightOf="@+id/textView2"
-        android:text=" "
-        android:layout_alignRight="@+id/button3"
-        android:layout_alignEnd="@+id/button3"
-        android:textSize="25dp" />
+
 
     <TextView
         android:layout_width="wrap_content"
@@ -134,5 +126,36 @@
         android:layout_alignEnd="@+id/backCriar"
         android:background="@android:drawable/checkbox_on_background"
         android:layout_above="@+id/backCriar" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DATA :"
+        android:id="@+id/textView22"
+        android:layout_alignBottom="@+id/confirmaCriar"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:textSize="25dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/editText4"
+        android:layout_alignTop="@+id/textView22"
+        android:layout_toRightOf="@+id/textView4"
+        android:layout_alignRight="@+id/editText3"
+        android:layout_alignEnd="@+id/editText3"
+        android:textSize="25dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selecionar Campo"
+        android:id="@+id/button5"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignLeft="@+id/editText2"
+        android:layout_alignStart="@+id/editText2" />
 
 </RelativeLayout>

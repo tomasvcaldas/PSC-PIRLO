@@ -6,7 +6,8 @@
     tools:context=".inscreverFutebol"
     android:weightSum="1"
     android:baselineAligned="true"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="#a70c741c">
 
     <LinearLayout
         android:layout_width="wrap_content"

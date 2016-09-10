@@ -7,7 +7,8 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.utilizador.pirloit.criarEvento">
+    tools:context="com.example.utilizador.pirloit.criarEvento"
+    android:background="#a70c741c">
 
     <Button
         style="?android:attr/buttonStyleSmall"
@@ -18,4 +19,120 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:background="@android:drawable/btn_dialog" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="MODALIDADE"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"
+        android:enabled="true"
+        android:textStyle="bold|italic" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FUTEBOL"
+        android:id="@+id/button"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#99ef85" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VOLEI"
+        android:id="@+id/button2"
+        android:layout_alignTop="@+id/button3"
+        android:layout_centerHorizontal="true"
+        android:background="#99ef85" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TENNIS"
+        android:id="@+id/button3"
+        android:layout_alignTop="@+id/button"
+        android:layout_toRightOf="@+id/textView"
+        android:layout_toEndOf="@+id/textView"
+        android:background="#99ef85" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LOCAL : "
+        android:id="@+id/textView2"
+        android:layout_below="@+id/button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="60dp"
+        android:textSize="25dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_toRightOf="@+id/textView2"
+        android:text=" "
+        android:layout_alignRight="@+id/button3"
+        android:layout_alignEnd="@+id/button3"
+        android:textSize="25dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HORA de INICIO :"
+        android:id="@+id/textView3"
+        android:textSize="25dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HORA de FIM :"
+        android:id="@+id/textView4"
+        android:textSize="25dp"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="39dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText2"
+        android:layout_above="@+id/textView4"
+        android:layout_toRightOf="@+id/textView3"
+        android:layout_alignRight="@+id/button3"
+        android:layout_alignEnd="@+id/button3"
+        android:textSize="25dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText3"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_toRightOf="@+id/textView4"
+        android:layout_alignRight="@+id/button3"
+        android:layout_alignEnd="@+id/button3"
+        android:textSize="25dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/confirmaCriar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/backCriar"
+        android:layout_alignEnd="@+id/backCriar"
+        android:background="@android:drawable/checkbox_on_background"
+        android:layout_above="@+id/backCriar" />
+
 </RelativeLayout>

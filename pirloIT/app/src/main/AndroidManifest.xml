@@ -15,9 +15,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".inscreverEvento" />
+        <activity android:name=".inscreverFutebol" />
         <activity android:name=".criarEvento" />
-        <activity android:name=".EventoConfirmado"></activity>
+        <activity android:name=".EventoConfirmado" />
+        <activity android:name=".escolherEvento" />
+        <activity android:name=".inscreverFutebol2" />
+        <activity android:name=".inscreverVolley" />
+        <activity android:name=".inscreverVolley2" />
+        <activity android:name=".inscreverBasket"></activity>
     </application>
 
 </manifest>

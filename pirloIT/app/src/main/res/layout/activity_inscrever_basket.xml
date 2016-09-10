@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.utilizador.pirloit.inscreverEvento"
+    tools:context=".inscreverFutebol"
     android:weightSum="1"
     android:baselineAligned="true"
     android:orientation="vertical">
@@ -13,53 +13,54 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-    <FrameLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-
-        <ImageView
-            android:layout_width="120dp"
-            android:layout_height="120dp"
-            android:id="@+id/imageView"
-            android:src="@drawable/jfdri9" />
-    </FrameLayout>
-
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <TextView
+        <FrameLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:id="@+id/textView" />
+            android:layout_height="wrap_content">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:paddingLeft="5dp"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="CAMPO DA AREOSA"
-            android:id="@+id/textView2" />
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:id="@+id/imageView"
+                android:src="@drawable/basketball"
+                android:layout_gravity="right|center_vertical" />
+        </FrameLayout>
 
-        <TextView
-            android:paddingLeft="5dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="14:00-15:00"
-            android:id="@+id/textView3" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:paddingLeft="5dp"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="Futsal"
-            android:id="@+id/textView4" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/textView" />
 
-    </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:paddingLeft="5dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="DRAGÃO CAIXA"
+                android:id="@+id/textView2" />
+
+            <TextView
+                android:paddingLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="09:00-10:00"
+                android:id="@+id/textView3" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:paddingLeft="5dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Basketball"
+                android:id="@+id/textView4" />
+
+        </LinearLayout>
     </LinearLayout>
 
     <Button
@@ -107,16 +108,9 @@
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="/10"
             android:id="@+id/textView5"
-             />
+            />
 
     </LinearLayout>
 
-    <Button
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/exit"
-        android:background="@android:drawable/btn_dialog"
-        android:onClick="goBack" />
-
 </LinearLayout>
+

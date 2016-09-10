@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
         inscreverActivity.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent inscreverIntent = new Intent(MainActivity.this,inscreverEvento.class);
+                Intent inscreverIntent = new Intent(MainActivity.this,escolherEvento.class);
                 startActivity(inscreverIntent);
             }
         });

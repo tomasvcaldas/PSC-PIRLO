@@ -65,7 +65,7 @@ public class criarEvento extends AppCompatActivity {
         confirmaCriar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent confirmaCriarIntent = new Intent(criarEvento.this,MainActivity.class);
+                Intent confirmaCriarIntent = new Intent(criarEvento.this,EventoConfirmado.class);
                 startActivity(confirmaCriarIntent);
             }
         });

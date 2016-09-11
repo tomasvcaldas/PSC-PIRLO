@@ -5,7 +5,8 @@
     android:layout_height="match_parent"
     android:weightSum="1"
     tools:context="com.example.utilizador.pirloit.escolherEvento"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="#ffffff">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -13,10 +14,9 @@
         android:id="@+id/scrollView" >
 
         <LinearLayout
-            android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#a70c741c">
+            android:orientation="vertical">
 
             <LinearLayout
                 android:orientation="horizontal"
@@ -43,15 +43,15 @@
                     <TextView
                         android:paddingLeft="10dp"
                         android:paddingTop="5dp"
-                        android:layout_width="wrap_content"
+                        android:layout_width="120dp"
                         android:layout_height="wrap_content"
-                        android:textAppearance="?android:attr/textAppearanceLarge"
                         android:text="PAVILHÃO"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
                         android:id="@+id/textView10" />
 
                     <TextView
                         android:paddingLeft="10dp"
-                        android:layout_width="wrap_content"
+                        android:layout_width="120dp"
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceLarge"
                         android:text="LUIS"
@@ -59,15 +59,15 @@
 
                     <TextView
                         android:paddingLeft="10dp"
-                        android:layout_width="wrap_content"
+                        android:layout_width="120dp"
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceLarge"
-                        android:text="FALCÃO"
+                        android:text="FALCÃO "
                         android:id="@+id/textView12" />
 
                     <TextView
                         android:paddingLeft="10dp"
-                        android:layout_width="wrap_content"
+                        android:layout_width="120dp"
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceMedium"
                         android:text="14:00-15:00"
@@ -79,7 +79,7 @@
                     android:layout_height="match_parent" >
 
                     <Button
-                        android:layout_width="134dp"
+                        android:layout_width="120dp"
                         android:layout_height="60dp"
                         android:text="MAIS"
                         android:id="@+id/mais"
@@ -113,7 +113,7 @@
                     <TextView
                         android:paddingLeft="10dp"
                         android:paddingTop="5dp"
-                        android:layout_width="wrap_content"
+                        android:layout_width="120dp"
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceLarge"
                         android:text="CAMPO"
@@ -121,7 +121,7 @@
 
                     <TextView
                         android:paddingLeft="10dp"
-                        android:layout_width="wrap_content"
+                        android:layout_width="120dp"
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceLarge"
                         android:text="DO"
@@ -129,7 +129,7 @@
 
                     <TextView
                         android:paddingLeft="10dp"
-                        android:layout_width="wrap_content"
+                        android:layout_width="120dp"
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceLarge"
                         android:text="IPP"
@@ -137,7 +137,7 @@
 
                     <TextView
                         android:paddingLeft="10dp"
-                        android:layout_width="wrap_content"
+                        android:layout_width="120dp"
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceMedium"
                         android:text="16:00-17:00"
@@ -149,7 +149,7 @@
                     android:layout_height="match_parent" >
 
                     <Button
-                        android:layout_width="134dp"
+                        android:layout_width="120dp"
                         android:layout_height="60dp"
                         android:text="MAIS"
                         android:layout_gravity="center"
@@ -183,7 +183,7 @@
                     <TextView
                         android:paddingLeft="10dp"
                         android:paddingTop="5dp"
-                        android:layout_width="wrap_content"
+                        android:layout_width="120dp"
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceLarge"
                         android:text="CAMPO"
@@ -191,7 +191,7 @@
 
                     <TextView
                         android:paddingLeft="10dp"
-                        android:layout_width="wrap_content"
+                        android:layout_width="120dp"
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceLarge"
                         android:text="DA"
@@ -199,7 +199,7 @@
 
                     <TextView
                         android:paddingLeft="10dp"
-                        android:layout_width="wrap_content"
+                        android:layout_width="120dp"
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceLarge"
                         android:text="FADEUP"
@@ -207,7 +207,7 @@
 
                     <TextView
                         android:paddingLeft="10dp"
-                        android:layout_width="wrap_content"
+                        android:layout_width="120dp"
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceMedium"
                         android:text="10:00-11:00"
@@ -219,7 +219,7 @@
                     android:layout_height="match_parent" >
 
                     <Button
-                        android:layout_width="134dp"
+                        android:layout_width="120dp"
                         android:layout_height="60dp"
                         android:text="MAIS"
                         android:id="@+id/mais3"
@@ -253,15 +253,15 @@
                     <TextView
                         android:paddingLeft="10dp"
                         android:paddingTop="5dp"
-                        android:layout_width="wrap_content"
+                        android:layout_width="120dp"
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceLarge"
-                        android:text="DRAGÃO"
+                        android:text="DRAGAO"
                         android:id="@+id/textView14" />
 
                     <TextView
                         android:paddingLeft="10dp"
-                        android:layout_width="wrap_content"
+                        android:layout_width="120dp"
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceLarge"
                         android:text="CAIXA"
@@ -269,14 +269,14 @@
 
                     <TextView
                         android:paddingLeft="10dp"
-                        android:layout_width="wrap_content"
+                        android:layout_width="120dp"
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceLarge"
                         android:id="@+id/textView16" />
 
                     <TextView
                         android:paddingLeft="10dp"
-                        android:layout_width="wrap_content"
+                        android:layout_width="120dp"
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceMedium"
                         android:text="21:00-22:00"
@@ -288,7 +288,7 @@
                     android:layout_height="match_parent" >
 
                     <Button
-                        android:layout_width="134dp"
+                        android:layout_width="120dp"
                         android:layout_height="60dp"
                         android:text="MAIS"
                         android:id="@+id/mais4"
@@ -322,7 +322,7 @@
                     <TextView
                         android:paddingLeft="10dp"
                         android:paddingTop="5dp"
-                        android:layout_width="wrap_content"
+                        android:layout_width="120dp"
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceLarge"
                         android:text="DRAGÃO"
@@ -330,7 +330,7 @@
 
                     <TextView
                         android:paddingLeft="10dp"
-                        android:layout_width="wrap_content"
+                        android:layout_width="120dp"
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceLarge"
                         android:text="CAIXA"
@@ -338,14 +338,14 @@
 
                     <TextView
                         android:paddingLeft="10dp"
-                        android:layout_width="wrap_content"
+                        android:layout_width="120dp"
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceLarge"
                         android:id="@+id/textView28" />
 
                     <TextView
                         android:paddingLeft="10dp"
-                        android:layout_width="wrap_content"
+                        android:layout_width="120dp"
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceMedium"
                         android:text="09:00-10:00"
@@ -357,7 +357,7 @@
                     android:layout_height="match_parent" >
 
                     <Button
-                        android:layout_width="134dp"
+                        android:layout_width="120dp"
                         android:layout_height="60dp"
                         android:text="MAIS"
                         android:id="@+id/mais5"
@@ -366,6 +366,11 @@
                         android:onClick="moreBasket" />
                 </FrameLayout>
             </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/newImage" />
 
         </LinearLayout>
     </ScrollView>

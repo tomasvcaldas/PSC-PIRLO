@@ -1,6 +1,7 @@
 package com.example.utilizador.pirloit;
 
 import android.content.Intent;
+import android.os.PersistableBundle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -12,6 +13,7 @@ public class inscreverFutebol extends AppCompatActivity {
     Button increase;
     Button decrease;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -21,6 +23,7 @@ public class inscreverFutebol extends AppCompatActivity {
         decrease = (Button) findViewById(R.id.des);
 
         output = (TextView) findViewById(R.id.output);
+
     }
 
     public void increase (View v) {
@@ -33,7 +36,20 @@ public class inscreverFutebol extends AppCompatActivity {
         if(currentNumber == 0) {} else output.setText(currentNumber - 1 + "");
     }
 
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        outState.putString("inscritos",output.getText().toString());
 
+        super.onSaveInstanceState(outState);
+    }
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+        output.setText(savedInstanceState.getString("inscritos"));
 
     }
+
+
+}
 

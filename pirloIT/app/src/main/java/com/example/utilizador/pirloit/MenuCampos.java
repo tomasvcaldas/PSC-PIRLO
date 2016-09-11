@@ -15,6 +15,7 @@ public class MenuCampos extends DialogFragment {
     "Campo do IPP",
     "Campo da FADEP",
     "Dragao Caixa"};
+    int local;
 
     String selection;
 
@@ -28,22 +29,22 @@ public class MenuCampos extends DialogFragment {
                 switch (i){
                     case 0:
                         selection = (String) items[i];
-
+                        local = 0;
                         break;
 
                     case 1:
                         selection = (String) items[i];
-
+                        local = 1;
                         break;
 
                     case 2:
                         selection = (String) items[i];
-
+                        local = 2;
                         break;
 
                     case 3:
                         selection = (String) items[i];
-
+                        local = 3;
                         break;
                 }
 
@@ -58,5 +59,9 @@ public class MenuCampos extends DialogFragment {
 
 
         return builder.create();
+    }
+
+    public int getLocal(){
+        return local;
     }
 }

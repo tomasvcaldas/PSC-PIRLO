@@ -33,6 +33,17 @@ public class inscreverVolley extends AppCompatActivity {
         if(currentNumber == 0) {} else output.setText(currentNumber - 1 + "");
     }
 
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        outState.putString("inscritos",output.getText().toString());
+        super.onSaveInstanceState(outState);
+    }
 
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+        output.setText(savedInstanceState.getString("inscritos"));
+
+    }
 
 }

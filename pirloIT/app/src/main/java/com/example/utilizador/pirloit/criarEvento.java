@@ -55,21 +55,21 @@ public class criarEvento extends AppCompatActivity {
 
     }
 
-    public void onClick1 (View v){
+    public void onClick1 (View v1){
         escolha = 1;
         pressed  = true;
         Intent futebol = new Intent(criarEvento.this,escolherEvento.class);
         startActivity(futebol);
     }
 
-    public void onClick2 (View v){
+    public void onClick2 (View v2){
         escolha = 2;
         pressed = true;
         Intent volley = new Intent(criarEvento.this,escolherEvento.class);
         startActivity(volley);
     }
 
-    public void onClick3 (View v){
+    public void onClick3 (View v3){
         escolha = 3;
         pressed = true;
         Intent basket = new Intent(criarEvento.this,escolherEvento.class);

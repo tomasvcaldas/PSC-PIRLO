@@ -32,7 +32,7 @@ public class MenuHora extends DialogFragment {
     public Dialog onCreateDialog(Bundle savedInstanceState) {
 
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
-        builder.setTitle("Selecionar Campo").setSingleChoiceItems(items, -1, new DialogInterface.OnClickListener() {
+        builder.setTitle("Selecionar Hora").setSingleChoiceItems(items, -1, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
                 switch (i){

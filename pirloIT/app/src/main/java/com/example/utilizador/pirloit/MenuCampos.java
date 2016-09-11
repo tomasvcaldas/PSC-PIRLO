@@ -50,6 +50,8 @@ public class MenuCampos extends DialogFragment {
                         break;
                     }
 
+
+
                 }
             }
         }).setPositiveButton("OK" , new DialogInterface.OnClickListener(){
@@ -65,6 +67,9 @@ public class MenuCampos extends DialogFragment {
                     name = "Campo da FADEUP";
                 else if(selection.equals("Dragão Caixa"))
                     name = "Dragão Caixa";
+
+
+
 
             }
         });

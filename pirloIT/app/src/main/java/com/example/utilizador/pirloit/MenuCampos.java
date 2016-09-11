@@ -52,6 +52,8 @@ public class MenuCampos extends DialogFragment {
 
 
 
+
+
                 }
             }
         }).setPositiveButton("OK" , new DialogInterface.OnClickListener(){
@@ -59,7 +61,7 @@ public class MenuCampos extends DialogFragment {
             public void onClick(DialogInterface dialog, int wich){
                 ok = true;
                 Toast.makeText(getActivity(), "Campo Selecionado : " + selection , Toast.LENGTH_LONG).show();
-                if(selection.equals("Pavilhão Luis Falcão"))
+               /* if(selection.equals("Pavilhão Luis Falcão"))
                     name = "Pavilhão Luís Falcão";
                 else if(selection.equals("Campo do IPP"))
                     name = "Campo do IPP";
@@ -67,7 +69,7 @@ public class MenuCampos extends DialogFragment {
                     name = "Campo da FADEUP";
                 else if(selection.equals("Dragão Caixa"))
                     name = "Dragão Caixa";
-
+*/
 
 
 

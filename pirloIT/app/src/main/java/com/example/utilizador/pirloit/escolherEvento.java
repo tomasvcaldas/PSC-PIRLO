@@ -81,6 +81,9 @@ public class escolherEvento extends AppCompatActivity {
             case 0:
                 titulo.setText("");
                 break;
+            case -1:
+                titulo.setText("null");
+                break;
         }
 
         switch (MenuHora.getHora()){

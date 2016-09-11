@@ -10,7 +10,7 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:id="@+id/scrollView" >
 
         <LinearLayout
@@ -44,26 +44,12 @@
                         android:paddingLeft="10dp"
                         android:paddingTop="5dp"
                         android:layout_width="120dp"
-                        android:layout_height="wrap_content"
-                        android:text="PAVILHÃO"
+                        android:layout_height="90dp"
+                        android:text="PAVILHÃO LUIS FALCÃO"
                         android:textAppearance="?android:attr/textAppearanceLarge"
                         android:id="@+id/textView10" />
 
-                    <TextView
-                        android:paddingLeft="10dp"
-                        android:layout_width="120dp"
-                        android:layout_height="wrap_content"
-                        android:textAppearance="?android:attr/textAppearanceLarge"
-                        android:text="LUIS"
-                        android:id="@+id/textView11" />
 
-                    <TextView
-                        android:paddingLeft="10dp"
-                        android:layout_width="120dp"
-                        android:layout_height="wrap_content"
-                        android:textAppearance="?android:attr/textAppearanceLarge"
-                        android:text="FALCÃO "
-                        android:id="@+id/textView12" />
 
                     <TextView
                         android:paddingLeft="10dp"
@@ -114,26 +100,12 @@
                         android:paddingLeft="10dp"
                         android:paddingTop="5dp"
                         android:layout_width="120dp"
-                        android:layout_height="wrap_content"
+                        android:layout_height="90dp"
                         android:textAppearance="?android:attr/textAppearanceLarge"
-                        android:text="CAMPO"
+                        android:text="CAMPO DA AREOSA"
                         android:id="@+id/textView6" />
 
-                    <TextView
-                        android:paddingLeft="10dp"
-                        android:layout_width="120dp"
-                        android:layout_height="wrap_content"
-                        android:textAppearance="?android:attr/textAppearanceLarge"
-                        android:text="DO"
-                        android:id="@+id/textView7" />
 
-                    <TextView
-                        android:paddingLeft="10dp"
-                        android:layout_width="120dp"
-                        android:layout_height="wrap_content"
-                        android:textAppearance="?android:attr/textAppearanceLarge"
-                        android:text="IPP"
-                        android:id="@+id/textView8" />
 
                     <TextView
                         android:paddingLeft="10dp"
@@ -184,26 +156,11 @@
                         android:paddingLeft="10dp"
                         android:paddingTop="5dp"
                         android:layout_width="120dp"
-                        android:layout_height="wrap_content"
+                        android:layout_height="90dp"
                         android:textAppearance="?android:attr/textAppearanceLarge"
-                        android:text="CAMPO"
+                        android:text="CAMPO DA AREOSA"
                         android:id="@+id/textView18" />
 
-                    <TextView
-                        android:paddingLeft="10dp"
-                        android:layout_width="120dp"
-                        android:layout_height="wrap_content"
-                        android:textAppearance="?android:attr/textAppearanceLarge"
-                        android:text="DA"
-                        android:id="@+id/textView19" />
-
-                    <TextView
-                        android:paddingLeft="10dp"
-                        android:layout_width="120dp"
-                        android:layout_height="wrap_content"
-                        android:textAppearance="?android:attr/textAppearanceLarge"
-                        android:text="FADEUP"
-                        android:id="@+id/textView20" />
 
                     <TextView
                         android:paddingLeft="10dp"
@@ -254,25 +211,12 @@
                         android:paddingLeft="10dp"
                         android:paddingTop="5dp"
                         android:layout_width="120dp"
-                        android:layout_height="wrap_content"
+                        android:layout_height="90dp"
                         android:textAppearance="?android:attr/textAppearanceLarge"
-                        android:text="DRAGAO"
+                        android:text="PAVILHAO LUIS FALCAO"
                         android:id="@+id/textView14" />
 
-                    <TextView
-                        android:paddingLeft="10dp"
-                        android:layout_width="120dp"
-                        android:layout_height="wrap_content"
-                        android:textAppearance="?android:attr/textAppearanceLarge"
-                        android:text="CAIXA"
-                        android:id="@+id/textView15" />
 
-                    <TextView
-                        android:paddingLeft="10dp"
-                        android:layout_width="120dp"
-                        android:layout_height="wrap_content"
-                        android:textAppearance="?android:attr/textAppearanceLarge"
-                        android:id="@+id/textView16" />
 
                     <TextView
                         android:paddingLeft="10dp"
@@ -323,25 +267,11 @@
                         android:paddingLeft="10dp"
                         android:paddingTop="5dp"
                         android:layout_width="120dp"
-                        android:layout_height="wrap_content"
+                        android:layout_height="90dp"
                         android:textAppearance="?android:attr/textAppearanceLarge"
-                        android:text="DRAGÃO"
+                        android:text="DRAGÃO CAIXA"
                         android:id="@+id/textView26" />
 
-                    <TextView
-                        android:paddingLeft="10dp"
-                        android:layout_width="120dp"
-                        android:layout_height="wrap_content"
-                        android:textAppearance="?android:attr/textAppearanceLarge"
-                        android:text="CAIXA"
-                        android:id="@+id/textView27" />
-
-                    <TextView
-                        android:paddingLeft="10dp"
-                        android:layout_width="120dp"
-                        android:layout_height="wrap_content"
-                        android:textAppearance="?android:attr/textAppearanceLarge"
-                        android:id="@+id/textView28" />
 
                     <TextView
                         android:paddingLeft="10dp"
@@ -367,11 +297,59 @@
                 </FrameLayout>
             </LinearLayout>
 
-            <ImageView
-                android:paddingTop="5dp"
-                android:layout_width="120dp"
-                android:layout_height="120dp"
-                android:id="@+id/newImage" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:paddingTop="5dp"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:id="@+id/newImage" />
+                </FrameLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:paddingLeft="10dp"
+                        android:paddingTop="5dp"
+                        android:layout_width="120dp"
+                        android:layout_height="90dp"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text=""
+                        android:id="@+id/textView22" />
+
+
+
+                    <TextView
+                        android:paddingLeft="10dp"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Medium Text"
+                        android:id="@+id/newTitulo" />
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:layout_width="120dp"
+                        android:layout_height="60dp"
+                        android:text="MAIS"
+                        android:layout_gravity="center"
+                        android:id="@+id/mais6" />
+                </FrameLayout>
+            </LinearLayout>
 
         </LinearLayout>
     </ScrollView>

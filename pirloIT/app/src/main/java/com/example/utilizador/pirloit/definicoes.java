@@ -18,6 +18,7 @@ public class definicoes extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 MenuCampos.setLocal(3);
+
             }
         });
 

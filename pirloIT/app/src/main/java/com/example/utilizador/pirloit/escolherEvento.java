@@ -7,8 +7,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.ScrollView;
 import android.widget.TextView;
 
+import org.w3c.dom.Text;
 
 
 public class escolherEvento extends AppCompatActivity {
@@ -18,8 +20,11 @@ public class escolherEvento extends AppCompatActivity {
     Button moreVolley;
     Button moreVolley2;
     Button moreBasket;
+    Button newButton;
 
     static ImageView imagem;
+    static TextView titulo;
+    static ScrollView nova;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,22 +35,30 @@ public class escolherEvento extends AppCompatActivity {
         moreVolley = (Button) findViewById(R.id.mais3);
         moreVolley2 = (Button) findViewById(R.id.mais4);
         moreBasket = (Button) findViewById(R.id.mais5);
+        newButton = (Button) findViewById(R.id.mais6);
+        nova = (ScrollView) findViewById(R.id.scrollView);
 
         imagem  = (ImageView) findViewById(R.id.newImage);
+        titulo = (TextView) findViewById(R.id.newTitulo);
+
+        newButton.setVisibility(View.GONE);
 
         switch(MenuCampos.getLocal()){
             case 0:
-                imagem.setImageResource(R.drawable.basketball);
+                titulo.setText("PAVILHÃO LUIS FALCÃO");
+                //imagem.setImageResource(R.drawable.basketball);
                 break;
             case 1:
-                imagem.setImageResource(R.drawable.football);
+               // imagem.setImageResource(R.drawable.football);
                 break;
             case 2:
-                imagem.setImageResource(R.drawable.volleyball);
+                //imagem.setImageResource(R.drawable.volleyball);
                 break;
             case 3:
+                imagem.setImageResource(0);
+                titulo.setText(null);
+                newButton.setVisibility(View.GONE);
                 imagem.setImageDrawable(null);
-
         }
 
     }

@@ -10,10 +10,6 @@ import android.widget.ToggleButton;
 
 public class criarEvento extends AppCompatActivity {
 
-    private boolean futebol = false;
-    private boolean tennis = false ;
-    private boolean volei = false ;
-
 
 
     @Override
@@ -21,44 +17,6 @@ public class criarEvento extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_criar_evento);
 
-        Button backCriar = (Button) findViewById(R.id.backCriar);
-        backCriar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent backCriarIntent = new Intent(criarEvento.this,MainActivity.class);
-                startActivity(backCriarIntent);
-            }
-
-        });
-
-        Button button = (Button) findViewById(R.id.button);
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-               futebol = true ;
-            }
-
-        });
-
-        Button button2 = (Button) findViewById(R.id.button2);
-        button2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                volei = true ;
-            }
-
-        });
-
-
-
-        Button button3 = (Button) findViewById(R.id.button3);
-        button3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                tennis = true ;
-            }
-
-        });
 
 
         Button confirmaCriar = (Button) findViewById(R.id.confirmaCriar);

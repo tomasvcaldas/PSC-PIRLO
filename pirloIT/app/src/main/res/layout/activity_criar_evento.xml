@@ -7,29 +7,50 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.utilizador.pirloit.criarEvento">
+    tools:context="com.example.utilizador.pirloit.criarEvento"
+    android:onClick="onClick1">
 
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/confirmaCriar"
-        android:background="@android:drawable/checkbox_on_background"
-        android:layout_alignParentTop="true"
-        android:layout_toLeftOf="@+id/button5"
-        android:layout_toStartOf="@+id/button5"
-        android:layout_marginTop="70dp" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Selecionar Campo"
         android:id="@+id/button5"
-        android:layout_marginTop="57dp"
-        android:layout_below="@+id/confirmaCriar"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginRight="48dp"
-        android:layout_marginEnd="48dp" />
+        android:layout_marginTop="63dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="15dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selecionar Hora"
+        android:id="@+id/button"
+        android:layout_marginTop="46dp"
+        android:layout_below="@+id/button5"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/button5"
+        android:layout_alignEnd="@+id/button5"
+        android:textSize="15dp" />
+
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/campo"
+        android:layout_alignBottom="@+id/button5"
+        android:layout_toRightOf="@+id/button5"
+        android:layout_toEndOf="@+id/button5"
+        android:textSize="15dp" />
+
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/hora"
+        android:textSize="15dp"
+        android:layout_alignBottom="@+id/button"
+        android:layout_toRightOf="@+id/button"
+        android:layout_toEndOf="@+id/button" />
 
 </RelativeLayout>

@@ -23,7 +23,8 @@ public class criarEvento extends AppCompatActivity {
         confirmaCriar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent confirmaCriarIntent = new Intent(criarEvento.this,EventoConfirmado.class);
+                Intent confirmaCriarIntent = new Intent(criarEvento.this,escolherEvento.class);
+
                 startActivity(confirmaCriarIntent);
             }
         });
@@ -37,7 +38,6 @@ public class criarEvento extends AppCompatActivity {
                 campo.show(getFragmentManager(), "seleciona_campo");
             }
         });
-
     }
 
 }

@@ -11,46 +11,87 @@
     android:onClick="onClick1">
 
 
-    <Button
+    <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Selecionar Campo"
-        android:id="@+id/button5"
-        android:layout_marginTop="63dp"
+        android:id="@+id/imageView13"
+        android:src="@drawable/pp"
         android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:textSize="15dp" />
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/button5" />
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:text="Selecionar Hora"
+        android:text="CAMPO"
+        android:id="@+id/button5"
+        android:textSize="15dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignTop="@+id/button"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="HORA"
         android:id="@+id/button"
-        android:layout_marginTop="46dp"
-        android:layout_below="@+id/button5"
+        android:textSize="15dp"
+        android:layout_above="@+id/imageView14"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_alignRight="@+id/button5"
-        android:layout_alignEnd="@+id/button5"
-        android:textSize="15dp" />
+        android:layout_marginBottom="49dp" />
 
-    <TextView
-        android:layout_width="250dp"
+    <ImageView
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:id="@+id/campo"
-        android:layout_alignBottom="@+id/button5"
-        android:layout_toRightOf="@+id/button5"
-        android:layout_toEndOf="@+id/button5"
-        android:textSize="15dp" />
+        android:id="@+id/imageView14"
+        android:src="@drawable/sdsdsdsd"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
-    <TextView
-        android:layout_width="250dp"
+    <ImageView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/hora"
-        android:textSize="15dp"
-        android:layout_alignBottom="@+id/button"
-        android:layout_toRightOf="@+id/button"
-        android:layout_toEndOf="@+id/button" />
+        android:id="@+id/imageView15"
+        android:src="@drawable/ll"
+        android:layout_below="@+id/imageView14"
+        android:layout_alignRight="@+id/imageView14"
+        android:layout_alignEnd="@+id/imageView14" />
+
+    <Button
+
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:text="FUTSAL"
+        android:id="@+id/button2"
+        android:layout_alignTop="@+id/imageView15"
+        android:layout_alignLeft="@+id/button5"
+        android:layout_alignStart="@+id/button5"
+        android:onClick="onClick1" />
+
+    <Button
+
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:text="VOLLEYBALL"
+        android:id="@+id/button3"
+        android:layout_below="@+id/button2"
+        android:layout_alignLeft="@+id/button2"
+        android:layout_alignStart="@+id/button2"
+        android:onClick="onClick2" />
+
+    <Button
+
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:text="BASKETALL"
+        android:id="@+id/button4"
+        android:layout_below="@+id/button3"
+        android:layout_alignLeft="@+id/button3"
+        android:layout_alignStart="@+id/button3"
+        android:onClick="onClick3" />
 
 </RelativeLayout>

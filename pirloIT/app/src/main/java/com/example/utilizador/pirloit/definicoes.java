@@ -17,7 +17,11 @@ public class definicoes extends AppCompatActivity {
         limpar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                MenuCampos.setLocal(3);
+                /*criarEvento.setPressed(false);
+                MenuCampos.setTest(0);
+                MenuHora.setHora(0);
+                criarEvento.setEscolha(0);
+                escolherEvento.newButton.setVisibility(View.GONE);*/
 
             }
         });

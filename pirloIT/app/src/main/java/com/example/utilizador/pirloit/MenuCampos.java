@@ -31,24 +31,25 @@ public class MenuCampos extends DialogFragment {
                 switch (i) {
                     case 0: {
                         selection = (String) items[i];
-                        test = 0;
+                        test = 1;
                         break;
                     }
                     case 1: {
                         selection = (String) items[i];
-                        test = 1;
+                        test = 2;
                         break;
                     }
                     case 2: {
                         selection = (String) items[i];
-                        test = 2;
+                        test = 3;
                         break;
                     }
                     case 3: {
                         selection = (String) items[i];
-                        test = 3;
+                        test = 4;
                         break;
                     }
+
                 }
             }
         }).setPositiveButton("OK" , new DialogInterface.OnClickListener(){
@@ -56,14 +57,14 @@ public class MenuCampos extends DialogFragment {
             public void onClick(DialogInterface dialog, int wich){
                 ok = true;
                 Toast.makeText(getActivity(), "Campo Selecionado : " + selection , Toast.LENGTH_LONG).show();
-                if(selection.equals("Pavilhao Luis Falcao"))
-                    name = "Pavilhao Luis Falcao";
+                if(selection.equals("Pavilhão Luis Falcão"))
+                    name = "Pavilhão Luís Falcão";
                 else if(selection.equals("Campo do IPP"))
                     name = "Campo do IPP";
                 else if(selection.equals("Campo da FADEUP"))
                     name = "Campo da FADEUP";
-                else if(selection.equals("Dragao Caixa"))
-                    name = "Dragao Caixa";
+                else if(selection.equals("Dragão Caixa"))
+                    name = "Dragão Caixa";
 
             }
         });
@@ -86,5 +87,9 @@ public class MenuCampos extends DialogFragment {
 
     public static int getTest(){
         return test;
+    }
+
+    public static void setTest(int rest){
+        test = rest;
     }
 }

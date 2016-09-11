@@ -35,8 +35,14 @@ public class MainActivity extends AppCompatActivity {
         confirmaCriar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent defsIntent = new Intent(MainActivity.this,definicoes.class);
-                startActivity(defsIntent);
+                /*Intent defsIntent = new Intent(MainActivity.this,definicoes.class);
+                startActivity(defsIntent);*/
+                criarEvento.setPressed(false);
+                MenuCampos.setTest(0);
+                MenuHora.setHora(0);
+                criarEvento.setEscolha(0);
+                escolherEvento.newButton.setVisibility(View.GONE);
+
             }
         });
 

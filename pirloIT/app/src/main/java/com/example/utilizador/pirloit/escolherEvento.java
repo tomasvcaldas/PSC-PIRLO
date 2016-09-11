@@ -20,11 +20,12 @@ public class escolherEvento extends AppCompatActivity {
     Button moreVolley;
     Button moreVolley2;
     Button moreBasket;
-    Button newButton;
+    static Button newButton;
 
     static ImageView imagem;
     static TextView titulo;
     static ScrollView nova;
+    static TextView hora;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,26 +40,95 @@ public class escolherEvento extends AppCompatActivity {
         nova = (ScrollView) findViewById(R.id.scrollView);
 
         imagem  = (ImageView) findViewById(R.id.newImage);
-        titulo = (TextView) findViewById(R.id.newTitulo);
+        titulo = (TextView) findViewById(R.id.titulo);
+        hora = (TextView) findViewById(R.id.horaid);
 
-        newButton.setVisibility(View.GONE);
 
-        switch(MenuCampos.getLocal()){
-            case 0:
-                titulo.setText("PAVILHÃO LUIS FALCÃO");
-                //imagem.setImageResource(R.drawable.basketball);
-                break;
+
+        if(criarEvento.getPressed() == true){
+            newButton.setVisibility(View.VISIBLE);
+        }
+        else newButton.setVisibility(View.GONE);
+
+        switch(criarEvento.getEscolha()){
             case 1:
-               // imagem.setImageResource(R.drawable.football);
+                imagem.setImageResource(R.drawable.football);
                 break;
             case 2:
-                //imagem.setImageResource(R.drawable.volleyball);
+                imagem.setImageResource(R.drawable.volleyball);
                 break;
             case 3:
-                imagem.setImageResource(0);
-                titulo.setText(null);
-                newButton.setVisibility(View.GONE);
+                imagem.setImageResource(R.drawable.basketball);
+                break;
+            case 21:
                 imagem.setImageDrawable(null);
+                break;
+        }
+
+        switch(MenuCampos.getTest()){
+            case 1:
+                titulo.setText("PAVILHÃO LUIS FALCÃO");
+                break;
+            case 2:
+                titulo.setText("CAMPO IPP");
+                break;
+            case 3:
+                titulo.setText("CAMPO DA FADEUP");
+                break;
+            case 4:
+                titulo.setText("DRAGÃO CAIXA");
+                break;
+            case 0:
+                titulo.setText("");
+                break;
+        }
+
+        switch (MenuHora.getHora()){
+            case 10:
+                hora.setText("10:00-11:00");
+                break;
+
+            case 11:
+                hora.setText("11:00-12:00");
+                break;
+
+            case 12:
+                hora.setText("12:00-13:00");
+                break;
+
+            case 13:
+                hora.setText("13:00-14:00");
+                break;
+
+            case 14:
+                hora.setText("14:00-15:00");
+                break;
+
+            case 15:
+                hora.setText("15:00-16:00");
+                break;
+
+            case 16:
+                hora.setText("16:00-17:00");
+                break;
+
+            case 17:
+                hora.setText("17:00-18:00");
+                break;
+            case 18:
+                hora.setText("18:00-19:00");
+                break;
+
+            case 19:
+                hora.setText("19:00-20:00");
+                break;
+
+            case 20:
+                hora.setText("20:00-21:00");
+                break;
+            case 21:
+                hora.setText("");
+                break;
         }
 
     }
@@ -89,9 +159,6 @@ public class escolherEvento extends AppCompatActivity {
         startActivity(futebol5);
     }
 
-    public static void setImagem(){
-        imagem.setImageResource(R.drawable.basketball);
-    }
 
 
 

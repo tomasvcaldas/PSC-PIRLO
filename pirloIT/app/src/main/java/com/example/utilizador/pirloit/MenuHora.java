@@ -26,6 +26,7 @@ public class MenuHora extends DialogFragment {
     String selection;
     String time;
     boolean ok = false;
+    static int hora;
 
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
@@ -37,57 +38,57 @@ public class MenuHora extends DialogFragment {
                 switch (i){
                     case 0:
                         selection = (String) items[i];
-
+                        hora = 10;
                         break;
 
                     case 1:
                         selection = (String) items[i];
-
+                        hora = 11;
                         break;
 
                     case 2:
                         selection = (String) items[i];
-
+                        hora = 12;
                         break;
 
                     case 3:
                         selection = (String) items[i];
-
+                        hora = 13;
                         break;
 
                     case 4:
                         selection = (String) items[i];
-
+                        hora = 14;
                         break;
 
                     case 5:
                         selection = (String) items[i];
-
+                        hora = 15;
                         break;
 
                     case 6:
                         selection = (String) items[i];
-
+                        hora = 16;
                         break;
 
                     case 7:
                         selection = (String) items[i];
-
+                        hora = 17;
                         break;
 
                     case 8:
                         selection = (String) items[i];
-
+                        hora = 18;
                         break;
 
                     case 9:
                         selection = (String) items[i];
-
+                        hora = 19;
                         break;
 
                     case 10:
                         selection = (String) items[i];
-
+                        hora = 20;
                         break;
                 }
 
@@ -134,6 +135,14 @@ public class MenuHora extends DialogFragment {
 
     public boolean getOk(){
         return ok;
+    }
+
+    public static int getHora(){
+        return hora;
+    }
+
+    public static void setHora(int hr){
+        hora = hr;
     }
 
 }

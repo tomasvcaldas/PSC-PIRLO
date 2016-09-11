@@ -10,10 +10,14 @@ import android.widget.TextView;
 import android.widget.ToggleButton;
 
 public class criarEvento extends AppCompatActivity {
-    TextView campo;
-    TextView hora;
+
     MenuCampos campos;
     MenuHora horas;
+    Button futsal;
+    Button volleyball;
+    Button basketball;
+    static int escolha;
+    static boolean pressed;
 
 
 
@@ -22,21 +26,22 @@ public class criarEvento extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_criar_evento);
+        pressed = false;
 
-        campo = (TextView) findViewById(R.id.campo);
-        hora = (TextView) findViewById(R.id.hora);
+
         campos = new MenuCampos();
         horas = new MenuHora();
-
+        futsal = (Button) findViewById(R.id.button2);
+        volleyball = (Button) findViewById(R.id.button3);
+        basketball = (Button) findViewById(R.id.button4);
 
 
         Button menu = (Button) findViewById(R.id.button5);
         menu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent confirmaCriarIntent = new Intent(criarEvento.this,escolherEvento.class);
+                campos.show(getFragmentManager(),"seleciona_campo");
 
-                startActivity(confirmaCriarIntent);
             }
         });
 
@@ -48,27 +53,42 @@ public class criarEvento extends AppCompatActivity {
             }
         });
 
-        switch(MenuCampos.getTest()){
-            case 0:
-                campo.setText("PAVILHAO");
-                break;
-            case 1:
-                campo.setText("ipp");
-                break;
-            case 2:
-                campo.setText("fadeup");
-                break;
-            case 3:
-                campo.setText("dragao");
-                break;
-        }
-
     }
 
-    /*public void onClick1 (View v){
-        campos.show(getFragmentManager(), "seleciona_campo");
-    }*/
+    public void onClick1 (View v){
+        escolha = 1;
+        pressed  = true;
+        Intent futebol = new Intent(criarEvento.this,escolherEvento.class);
+        startActivity(futebol);
+    }
+
+    public void onClick2 (View v){
+        escolha = 2;
+        pressed = true;
+        Intent volley = new Intent(criarEvento.this,escolherEvento.class);
+        startActivity(volley);
+    }
+
+    public void onClick3 (View v){
+        escolha = 3;
+        pressed = true;
+        Intent basket = new Intent(criarEvento.this,escolherEvento.class);
+        startActivity(basket);
+    }
 
 
+    public static int getEscolha(){
+        return escolha;
+    }
+    public static void setEscolha(int novo){
+        escolha = novo;
+    }
 
+    public static boolean getPressed(){
+        return pressed;
+    }
+
+    public static void setPressed(boolean novo){
+        pressed = novo;
+    }
 }

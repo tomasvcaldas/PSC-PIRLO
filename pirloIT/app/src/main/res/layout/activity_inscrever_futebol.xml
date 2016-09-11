@@ -50,7 +50,7 @@
                     android:paddingLeft="5dp"
                     android:layout_height="wrap_content"
                     android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:text="PAVILHÃO LUIS FALCÃO"
+                    android:text="PAVILHÃO LUÍS FALCÃO"
                     android:id="@+id/textView2" />
 
                 <TextView

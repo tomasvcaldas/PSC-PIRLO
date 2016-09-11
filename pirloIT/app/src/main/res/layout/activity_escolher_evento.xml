@@ -347,7 +347,8 @@
                         android:layout_height="60dp"
                         android:text="MAIS"
                         android:layout_gravity="center"
-                        android:id="@+id/mais6" />
+                        android:id="@+id/mais6"
+                        android:onClick="newButton" />
                 </FrameLayout>
             </LinearLayout>
 

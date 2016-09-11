@@ -34,7 +34,9 @@ public class criarEvento extends AppCompatActivity {
         menu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                campos.show(getFragmentManager(), "seleciona_campo");
+                Intent confirmaCriarIntent = new Intent(criarEvento.this,escolherEvento.class);
+
+                startActivity(confirmaCriarIntent);
             }
         });
 

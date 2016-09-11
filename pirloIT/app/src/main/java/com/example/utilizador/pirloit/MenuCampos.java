@@ -15,7 +15,7 @@ public class MenuCampos extends DialogFragment {
     "Campo do IPP",
     "Campo da FADEP",
     "Dragao Caixa"};
-    int local;
+    static int local;
 
     String selection;
 
@@ -61,7 +61,11 @@ public class MenuCampos extends DialogFragment {
         return builder.create();
     }
 
-    public int getLocal(){
+    public static int getLocal(){
         return local;
+    }
+
+    public static void setLocal(int test) {
+        local=test;
     }
 }

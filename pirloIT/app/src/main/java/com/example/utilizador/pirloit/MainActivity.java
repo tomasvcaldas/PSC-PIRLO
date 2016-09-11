@@ -31,5 +31,14 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        Button confirmaCriar = (Button) findViewById(R.id.defs);
+        confirmaCriar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent defsIntent = new Intent(MainActivity.this,definicoes.class);
+                startActivity(defsIntent);
+            }
+        });
+
     }
 }

@@ -33,7 +33,20 @@ public class escolherEvento extends AppCompatActivity {
 
         imagem  = (ImageView) findViewById(R.id.newImage);
 
+        switch(MenuCampos.getLocal()){
+            case 0:
+                imagem.setImageResource(R.drawable.basketball);
+                break;
+            case 1:
+                imagem.setImageResource(R.drawable.football);
+                break;
+            case 2:
+                imagem.setImageResource(R.drawable.volleyball);
+                break;
+            case 3:
+                imagem.setImageDrawable(null);
 
+        }
 
     }
 
